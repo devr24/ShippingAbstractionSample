@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>f1e44b39-7425-4957-81b1-294cd428dfab</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Logistics.Shipping.CentiroProvider\Logistics.Shipping.Providers.Centiro.csproj" />
+    <ProjectReference Include="..\Logistics.Shipping.Abstractions\Logistics.Shipping.Abstractions.csproj" />
+    <ProjectReference Include="..\Logistics.Shipping.Providers.Asendia\Logistics.Shipping.Providers.Asendia.csproj" />
+    <ProjectReference Include="..\Logistics.Shipping.Providers.Dpd\Logistics.Shipping.Providers.Dpd.csproj" />
+    <ProjectReference Include="..\Logistics.Shipping.Providers.Singpost\Logistics.Shipping.Providers.Singpost.csproj" />
+  </ItemGroup>
+
+</Project>
